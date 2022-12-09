@@ -1,0 +1,125 @@
+p{
+    background-color: #34ace0;
+}
+/* descendant selector*/
+div p{
+    background-color: #ffda79;
+}
+div li p{
+    background-color: #7bed9f;
+}
+.p1{
+    background-color: #f8a5c2;
+}
+div>p.p1{
+    background-color: #ea8685;
+}
+div li p.p1{
+    background-color: #81ecec;
+}
+/*child seletor
+div>p{
+    background-color: #ff6b81;
+}*/
+
+
+a{
+    background-color: aquamarine;
+}
+a[target]{
+    background-color: red;
+    color: white;
+}
+a[target='_blank']{
+    background-color: #d2dae2;
+    color: black;
+}
+
+input[type="email"],input[type="text"]{
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+input[type="submit"]{
+    background-color: #ff3838;
+    color: white;
+    border-color: white;
+}
+
+
+li.ip{
+    padding: 0.25rem;
+    margin: 0.25rem;
+    list-style: none;
+}
+li.ip:nth-child(odd){
+    background-color: coral;
+}
+li.ip:nth-child(even){
+    background-color: cornflowerblue;
+}
+/*li.ip:first-child{
+    background-color: #f8a5c2;
+}
+li.ip:nth-child(3n+5){
+    background-color: #7bed9f;
+}
+li.ip:nth-child(2){
+    background-color: blue;
+}
+li.ip:nth-child(4){
+    background-color: greenyellow;
+}
+li.ip:nth-last-child(2),li.ip:nth-last-child(3){
+    background-color: #81ecec;
+}
+li.ip:last-child{
+    background-color: brown;
+}*/
+
+.is-required::before{
+    content: "*";
+    color: red;
+    padding-left: 2px;
+}
+
+
+:root{
+    --box:1px solid red;
+    --theme-color:orange;
+    --shadow:5px 5px var(--theme-color);
+    --spacing:10px;
+    --font:40px;
+}
+.box-1{
+    border: var(--box);
+    background-color: var(--theme-color);
+    box-shadow: var(--shadow);
+    margin: var(--spacing);
+    font-size: var(--font);
+}
+.box-2{
+    border: var(--box);
+    box-shadow: var(--shadow);
+    margin: var(--spacing);
+}
+.box-3{
+    border: var(--box);
+    background-color: var(--theme-color);
+    box-shadow: var(--shadow);
+    margin: var(--spacing);
+}
+
+.boxT{
+    width: 100px;
+    height: 100px;
+    background-color: #FEA47F;
+    border: 5px solid black;
+    margin: 200px;
+    /* ย้ายกล่อง*/
+    /*transform: translate(200px,300px);*/
+    /*transform: rotateX(45deg);*/
+    /*transform: scale(1.5);*/
+    transform: skew(10deg,20deg);
+}
+

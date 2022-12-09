@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+body{
+    font-family: 'Aboreto', cursive;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    visibility: hidden;
+}
+
+/* smartphone*/
+@media (max-width:480px){
+    body{
+        background-color:#7bed9f;
+    }
+    #smartphone h1{
+        visibility: visible;
+    }
+}
+/* tablets*/
+@media (min-width:481px) and (max-width:768px){
+    body{
+        background-color: #70a1ff;
+    }
+    #tablets h1{
+        visibility: visible;
+    }
+}
+/*laptop destop*/
+@media (min-width:769px) and (max-width:1200px){
+    body{
+        background-color: #ff6b81;
+    }
+    #normal h1,#TV h1{
+        visibility: visible;
+    } 
+}
+@media(min-width:1201px){
+    #landscape1 h1{
+        visibility: visible;
+    }
+}

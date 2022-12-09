@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+.fixe-container{
+    display: flex;
+    background-color: #2ed573; /*พื้นที่ fixe-container */
+    flex-direction: nowrap;
+    justify-content: center;
+    /*flex-direction: column;
+    align-items: flex-start;*/ 
+}   
+.Item{
+    border: 3px solid;
+    background-color: #7bed9f;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    /*flex: 1;*/
+    
+}
+.Item1{
+    /*flex-shrink: 1;
+    flex-grow: 1;*/   
+}
